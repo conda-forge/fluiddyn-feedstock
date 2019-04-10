@@ -38,6 +38,7 @@ requirements:
     - imageio
     - h5netcdf
     - sip
+    - mpi4py
 
 test:
   imports:
