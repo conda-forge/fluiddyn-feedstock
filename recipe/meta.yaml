@@ -19,7 +19,6 @@ build:
     - fluidmat2py = fluiddyn.util.matlab2py:main
     - fluidcluster-help = fluiddyn.clusters:print_help_scheduler
   script: "{{ PYTHON }} -m pip install .[full] --no-deps --ignore-installed -vv "
-  noarch: python
 
 requirements:
   host:
