@@ -10,7 +10,7 @@ source:
   sha256: 488dcc8cd1660fd6eed939defeb21250114b5de9c94cc1d979136ea439789b33
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - fluidinfo = fluiddyn.util.info:main
     - fluidnbstripout = fluiddoc.fluidnbstripout:main
