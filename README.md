@@ -22,11 +22,95 @@ Current build status
 
 
 <table><tr>
-    <td>All platforms:</td>
+    <td>Appveyor</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://ci.appveyor.com/project/conda-forge/fluiddyn-feedstock/branch/master">
+        <img alt="windows" src="https://img.shields.io/appveyor/ci/conda-forge/fluiddyn-feedstock/master.svg?label=Windows">
+      </a>
     </td>
   </tr>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_mpimpich</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=linux&configuration=linux_mpimpich" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_mpinompi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=linux&configuration=linux_mpinompi" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_mpiopenmpi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=linux&configuration=linux_mpiopenmpi" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_mpimpich</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=osx&configuration=osx_mpimpich" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_mpinompi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=osx&configuration=osx_mpinompi" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_mpiopenmpi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=osx&configuration=osx_mpiopenmpi" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_mpimpich</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=win&configuration=win_mpimpich" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_mpinompi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=win&configuration=win_mpinompi" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_mpiopenmpi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=win&configuration=win_mpiopenmpi" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
 </table>
 
 Current release info
