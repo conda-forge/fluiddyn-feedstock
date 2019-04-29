@@ -25,6 +25,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - {{ mpi }}  # [mpi != 'nompi']
   run:
     - python >=3.6
     - numpy
@@ -38,7 +39,8 @@ requirements:
     - imageio
     - h5netcdf
     - sip
-    - mpi4py
+    - mpi4py  # [mpi != 'nompi']
+    - {{ mpi }}  # [mpi != 'nompi']
 
 test:
   imports:
