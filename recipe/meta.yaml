@@ -37,6 +37,7 @@ build:
     - {{ name }} * {{ mpi_prefix }}_*
   {% endif %}
 
+  skip: true  # [win and (mpi != 'nompi')]
   entry_points:
     - fluidinfo = fluiddyn.util.info:main
     - fluidnbstripout = fluiddoc.fluidnbstripout:main
