@@ -1,6 +1,6 @@
 mpi:
-  - openmpi
-  - mpich
+  - openmpi  # [not win]
+  - mpich  # [not win]
   - nompi
 
 # conda_build_config.yaml
