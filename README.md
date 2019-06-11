@@ -84,24 +84,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_mpimpich</td>
+              <td>win</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=win&configuration=win_mpimpich" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_mpinompi</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=win&configuration=win_mpinompi" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_mpiopenmpi</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6517&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=win&configuration=win_mpiopenmpi" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fluiddyn-feedstock?branchName=master&jobName=win&configuration=win_" alt="variant">
                 </a>
               </td>
             </tr>
