@@ -1,6 +1,6 @@
 {% set name = "fluiddyn" %}
 {% set version = "0.3.1" %}
-{% set build = 1001 %}
+{% set build = 2000 %}
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'nompi' %}
 
@@ -37,7 +37,7 @@ build:
     - {{ name }} * {{ mpi_prefix }}_*
   {% endif %}
 
-  skip: true  # [(win and (mpi != 'nompi')) or py<36]
+  skip: true  # [win and (mpi != 'nompi')]
   entry_points:
     - fluidinfo = fluiddyn.util.info:main
     - fluidnbstripout = fluiddoc.fluidnbstripout:main
@@ -50,10 +50,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - {{ mpi }}  # [mpi != 'nompi']
   run:
-    - python
+    - python >=3.6
     - numpy
     - psutil >=5.2.1
     - six
