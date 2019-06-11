@@ -1,6 +1,6 @@
 {% set name = "fluiddyn" %}
 {% set version = "0.3.1" %}
-{% set build = 1000 %}
+{% set build = 1001 %}
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'nompi' %}
 
@@ -65,6 +65,7 @@ requirements:
     - imageio
     - h5netcdf
     - sip
+    - scikit-image
     - mpi4py  # [mpi != 'nompi']
     - {{ mpi }}  # [mpi != 'nompi']
 
