@@ -37,7 +37,7 @@ build:
     - {{ name }} * {{ mpi_prefix }}_*
   {% endif %}
 
-  skip: true  # [win and (mpi != 'nompi')]
+  skip: true  # [(win and (mpi != 'nompi')) or py<36]
   entry_points:
     - fluidinfo = fluiddyn.util.info:main
     - fluidnbstripout = fluiddoc.fluidnbstripout:main
@@ -50,10 +50,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
     - {{ mpi }}  # [mpi != 'nompi']
   run:
-    - python >=3.6
+    - python
     - numpy
     - psutil >=5.2.1
     - six
