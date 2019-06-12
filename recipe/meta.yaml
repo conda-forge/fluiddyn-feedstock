@@ -34,7 +34,7 @@ build:
 
   {% if mpi != 'nompi' %}
   run_exports:
-    - {{ name }} * {{ mpi_prefix }}_*
+    - {{ name }}*{{ mpi_prefix }}_*
   {% endif %}
 
   skip: true  # [win and (mpi != 'nompi')]
