@@ -52,22 +52,23 @@ requirements:
     - pip
     - python >=3.6
     - {{ mpi }}  # [mpi != 'nompi']
+    - mpi4py  # [mpi != 'nompi']
   run:
     - python >=3.6
     - numpy
     - psutil >=5.2.1
     - six
+    - {{ mpi }}  # [mpi != 'nompi']
+    - mpi4py  # [mpi != 'nompi']
     - h5py
+    - h5netcdf
     - nbstripout
     - scipy
     - matplotlib
     - opencv
     - imageio
-    - h5netcdf
     - sip
     - scikit-image
-    - mpi4py  # [mpi != 'nompi']
-    - {{ mpi }}  # [mpi != 'nompi']
 
 test:
   imports:
