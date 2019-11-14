@@ -65,7 +65,7 @@ requirements:
     - nbstripout
     - scipy
     - matplotlib
-    - opencv
+#    - opencv
     - imageio
     - sip
     - scikit-image
