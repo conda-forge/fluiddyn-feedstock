@@ -1,6 +1,6 @@
 {% set name = "fluiddyn" %}
 {% set version = "0.3.1" %}
-{% set build = 1001 %}
+{% set build = 1002 %}
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'nompi' %}
 
@@ -65,7 +65,7 @@ requirements:
     - h5netcdf
     - nbstripout
     - scipy
-    - matplotlib
+    - matplotlib-base
 #    - opencv
     - imageio
     - sip
