@@ -39,6 +39,8 @@ requirements:
     - imageio
     - sip
     - scikit-image
+    - distro  # [py>=38]
+    - cached-property  # [py<38]
 
 test:
   imports:
