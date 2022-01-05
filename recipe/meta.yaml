@@ -40,6 +40,8 @@ requirements:
     - qtpy
     - distro  # [py>=38]
     - cached-property  # [py<38]
+    # (quick fix)
+    - setuptools
 
 test:
   imports:
