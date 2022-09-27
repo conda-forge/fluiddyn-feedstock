@@ -1,5 +1,5 @@
 {% set name = "fluiddyn" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set build = 0 %}
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0e867dae4bfba3aab9beb26e2508879658b264667e8dfd017789375dd856a779
+  sha256: 36323b3642fd0d6e3a48df6b1ac916f4cad6677e80b22653f864083dc1b1d88d
 
 build:
   number: {{ build }}
-  skip: true  # [py<36]
+  noarch: python
   entry_points:
     - fluidinfo = fluiddyn.util.info:main
     - fluidnbstripout = fluiddoc.fluidnbstripout:main
@@ -25,9 +25,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
   run:
-    - python
+    - python >=3.8
     - numpy
     - psutil >=5.2.1
     - h5py
@@ -38,8 +38,7 @@ requirements:
     - imageio
     - scikit-image
     - qtpy
-    - distro  # [py>=38]
-    - cached-property  # [py<38]
+    - distro
     # (quick fix)
     - setuptools
 
