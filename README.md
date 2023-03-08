@@ -1,11 +1,11 @@
-About fluiddyn
-==============
+About fluiddyn-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fluiddyn-feedstock/blob/main/LICENSE.txt)
 
 Home: https://foss.heptapod.net/fluiddyn/fluiddyn/
 
 Package license: CECILL-B
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fluiddyn-feedstock/blob/main/LICENSE.txt)
 
 Summary: Framework for studying fluid dynamics.
 
