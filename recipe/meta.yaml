@@ -42,6 +42,8 @@ requirements:
     - scikit-image
     - qtpy
     - distro
+    # because fluiddoc still uses pkg_resources
+    - setuptools
 
 test:
   imports:
