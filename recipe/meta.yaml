@@ -1,5 +1,5 @@
 {% set name = "fluiddyn" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 {% set build = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0eb3319694e7b9ef53d038773bd2c1981a637e0d0e2d00be5a848390939254e6
+  sha256: 75a3f9640716a686a87337c615ecd6b9dc88f8dd797f407863e3a995645f0513
 
 build:
   number: {{ build }}
@@ -25,9 +25,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
+    - pdm-backend >=2.1.8
+    # needed because https://github.com/pdm-project/pdm-backend/issues/209
+    - editables >=0.3
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy
     - psutil >=5.2.1
     - h5py
@@ -39,7 +42,7 @@ requirements:
     - scikit-image
     - qtpy
     - distro
-    # (quick fix)
+    # because fluiddoc still uses pkg_resources
     - setuptools
 
 test:
