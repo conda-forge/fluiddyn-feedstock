@@ -25,9 +25,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
+    - pdm-backend >=2.1.8
+    # needed because https://github.com/pdm-project/pdm-backend/issues/209
+    - editables >=0.3
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy
     - psutil >=5.2.1
     - h5py
@@ -39,8 +42,6 @@ requirements:
     - scikit-image
     - qtpy
     - distro
-    # (quick fix)
-    - setuptools
 
 test:
   imports:
