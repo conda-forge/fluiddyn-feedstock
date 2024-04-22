@@ -1,5 +1,5 @@
 {% set name = "fluiddyn" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 {% set build = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 40f772cfdf111797ae1c6cf7b67272207f2bc7c4f599085634cc1d74eb748ee5
+  sha256: 3c4c57ac8e48c55498aeafaf8b26daecefc03e6ac6e2c03a591e0f7fec13bb69
 
 build:
   number: {{ build }}
