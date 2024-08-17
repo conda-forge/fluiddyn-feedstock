@@ -1,5 +1,5 @@
 {% set name = "fluiddyn" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 {% set build = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 576eb0fa50012552b3a68dd17e81ce4f08ddf1e276812b02316016bb1c3a1342
+  sha256: ad0df4c05855bd2ae702731983d310bfbb13802874ce83e2da6454bb7100b5df
 
 build:
   number: {{ build }}
@@ -43,8 +43,6 @@ requirements:
     - qtpy
     - distro
     - simpleeval >=0.9.13
-    # because fluiddoc still uses pkg_resources
-    - setuptools
 
 test:
   imports:
